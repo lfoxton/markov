@@ -19,11 +19,6 @@ public class MarkovController {
         return "markov";
     }
 
-    @RequestMapping("/markovResult")
-    public String markovResult(Model model) {
-        return "markovResult";
-    }
-
     @RequestMapping(method = RequestMethod.POST, value = "/doTheMarkov")
     public String doTheMarkov(
             @RequestParam("file") MultipartFile file,
