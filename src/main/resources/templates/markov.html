@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title>Markov Chains</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../css/markov.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">MARKOV CHAINS</a>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>Markov Chains!</h1>
+    <p>A Markov chain (discrete-time Markov chain or DTMC[1]), named after Andrey Markov, is a random process that undergoes transitions from one state to another on a state space.</p>
+    <p>To get started, please upload a seed file so we can start generating random sentences.</p>
+
+    <form method="POST" id="markov" enctype="multipart/form-data" action="/doTheMarkov">
+
+      <fieldset class="form-group">
+        <label for="file">Upload a text file:</label>
+        <input type="file" class="form-control-file" id="file" name="file" />
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label for="firstWord">Choose a word:</label>
+        <input type="text" class="form-control" id="firstWord" name="firstWord"/>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label for="depth">Max Words:</label>
+        <input type="text" class="form-control" id="depth" name="depth" value="100"/>
+      </fieldset>
+
+      <input type="submit" value="Submit" style="display: none;" />
+
+      <p>
+        <a class="btn btn-primary btn-lg" href="#" onclick="$(this).closest('form').submit()" role="button">Upload</a>
+        <a class="btn btn-primary btn-lg" href="https://en.wikipedia.org/wiki/Markov_chain" target="_blank" role="button">Learn More</a>
+      </p>
+
+    </form>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</body>
+
+</html>
