@@ -1,13 +1,13 @@
-h1. Markov Chain Demo
+# Markov Chain Demo
 
-h1. System Reqs
+## System Reqs
 
 * Gradle
 * Java 1.7
 * Springboot CLI (optional)
 * Bootstrap
 
-h1. To run it
+## To run it
 
 * Go to the root folder
 * Run in developer mode > gradle bootRun
