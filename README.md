@@ -1,13 +1,11 @@
-            __        __           __                    __
- |\/|  /\  |__) |__/ /  \ \  /    /  ` |__|  /\  | |\ | /__`
- |  | /~~\ |  \ |  \ \__/  \/     \__, |  | /~~\ | | \| .__/
+h1. Markov Chain Demo
 
-                                                             
 h1. System Reqs
 
 * Gradle
 * Java 1.7
 * Springboot CLI (optional)
+* Bootstrap
 
 h1. To run it
 
